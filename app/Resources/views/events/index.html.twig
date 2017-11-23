@@ -1,0 +1,9 @@
+<h1>{{ events|length }} Membre{% if events|length > 1 %}s{% endif %} dans la Famille</h1>
+
+<h2>{{ currentTime }}</h2>
+
+<ul>
+	{% for e in events %}
+		<li>{{ e }}</li>
+	{% endfor %}
+</ul>
